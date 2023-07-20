@@ -193,7 +193,7 @@ class TemperatureMonitor(QMainWindow):
         self.flag=1
         # Append data to the text file
         timestamp = timestamp.replace(microsecond=0)
-        data = f"{timestamp}\t{temperature_a}\t{temperature_b}\n"
+        data = f"{timestamp},\t{temperature_a},\t{temperature_b}\n"
         
         # Append data to the text file
         with open(self.file_path, "a") as file:
